@@ -1,0 +1,10 @@
+1. Install required libraries
+pip install numpy scipy opencv-python matplotlib
+
+2. Encode test
+Run:
+python main.py --frames_dir frames --output video.bin --gop 4 --qf 50 --search 4
+
+3. Decode test
+After encoding, run:
+python main.py --decode --input video.bin --output_dir decoded_frames
